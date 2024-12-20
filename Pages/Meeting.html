@@ -18,8 +18,117 @@
     <title>Meeting Page</title>
 </head>
 <body>
-    
+    <!-- header -->
+    <header class="container-fluid ">
+        <div class="container d-flex justify-content-between p-3">
+            <div class="logo">
+                <img src="../image/logo.png" alt="logo">
+            </div>
+            <div class="position-absolute header-vector">
+                <img src="../image/header-vector.svg" alt="vector image">
+            </div>
+            <div class="d-flex header-btn">
+                <button class="me-3 linear-btn" >
+                    <span>SIGN IN 
+                        <img src="../image/Arrow.svg" alt="arrow">
+                    </span>
+                </button>
+            </div>
+        </div>    
+    </header>
 
+    <!-- Main meeting Box -->
+    <div class="container py-2 main-card meeting-card">
+        <!-- meeting containt -->
+        <div class="d-flex align-items-start justify-content-between">
+            <div class="pt-4">
+                <div class="recoding my-2">
+                    <img src="../image/meeting/recordIcon.png" alt="recoding">
+                    <span>0:00/0:05</span>
+                </div>
+                <div class="chat-card py-2 d-flex gap-3">
+                    <div class="chart-lead-card">
+                        <div class="edit-icons">
+                            <img src="../image/meeting/PencilSimpleLine.png" alt="">
+                            <img src="../image/meeting/Heart.png" alt="">
+                            <img src="../image/meeting/TrashSimple.png" alt="">
+                        </div>
+                        <img class="chat-card-img" src="../image/businessman/businessman9.png" alt="">
+                        <h6>Chat Lead</h6>
+                        <p>35 years old Teacher, married with 2 kids, education: MBA, enjoys traveling and hiking...</p>
+                    </div>
+                    <div class="add-persona d-flex align-items-center justify-content-center flex-column">
+                        <img src="../image/meeting/PlusCircle.png" alt="PlusCircle" width="50">
+                        <h5>Add Persona</h5>
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                </div>
+                <div class="line-arrow">
+                    <img src="../image/Line.svg" alt="line img">
+                </div>
+                <div class="chart-lead-card2">
+                    <div class="d-flex align-items-center gap-4">
+                        <img src="../image/meeting/animoji.png" alt="">
+                        <h5>You</h5>
+                    </div>
+                    <p class="mt-2 pt-2">Discussion Topic: 
+                        <span>Health</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Transcript -->
+            <div class="transcript mt-5">
+                <p class="transcript-heading">Transcript</p>
+
+                <div class="d-flex trans-body flex-column justify-content-end align-items-end me-2 gap-2">
+                    <div class="d-flex flex-column chart-message-user1">
+                        <div class="d-flex align-items-start gap-2 justify-content-between">
+                            <p>Hellow how are you</p>
+                            <img src="../image/meeting/animoji.png" alt="">
+                        </div>
+                        <span>Gabriel 3:00pm</span>
+                    </div>
+                    <div class="d-flex flex-column chart-message-user1 user2">
+                        <div class="d-flex align-items-start gap-2 justify-content-between">
+                            <img src="../image/meeting/animoji.png" alt="">
+                            <p>Hellow how are you</p>
+                        </div>
+                        <span>Gabriel 3:00pm</span>
+                    </div>
+                    <div class="d-flex flex-column chart-message-user1">
+                        <div class="d-flex align-items-start gap-2 justify-content-between">
+                            <p>Hellow how are you</p>
+                            <img src="../image/meeting/animoji.png" alt="">
+                        </div>
+                        <span>Gabriel 3:00pm</span>
+                    </div>
+                    <div class="d-flex flex-column chart-message-user1 user2">
+                        <div class="d-flex align-items-start gap-2 justify-content-between">
+                            <img src="../image/meeting/animoji.png" alt="">
+                            <p>Hellow how are you</p>
+                        </div>
+                        <span>Gabriel 3:00pm</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center gap-3 mic">
+            <img src="../image/meeting/mute.png" alt="">
+            <img src="../image/meeting/mic.png" alt="">
+            <img src="../image/meeting/call.png" alt="">
+        </div>
+        <!-- meeting Input -->
+        <div class="my-2 mt-4">
+            <div class="meeting-input">
+                <input type="text" placeholder="Message Slara" class="form-control rounded-2 ps-3">
+                <div class="input-icons">
+                    <img src="../image/meeting/ion_attach.png" alt="">
+                    <img src="../image/meeting/rightArrow.png" alt="" width="30">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
