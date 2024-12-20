@@ -11,49 +11,80 @@ body {
     background-color: #0E0026;
 }
 
-
-.header-btn button, .left-card button{
-    background: #0E0026;
-    border: 1px solid #9208F3;
-    border-radius: 20px;
-    color: #E9DEFF;
-    font-weight: 200;
-    font-size: 14px;
-    padding: 5px 10px;
+.header-btn{
+    display: block;
 }
 
-.header-btn button i{
-    color: white;
+.linear-btn {
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(148, 0, 253, 1) 42%, rgb(14 0 38 / 87%) 100%);
+    border: 0;
+    border-radius: 30px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    padding: 1px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.linear-btn span {
+    background-color: #0E0026;
+    padding: 6px 12px;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.linear-btn img{
+    margin-left: 5px;
+    color: #E9DEFF;
 }
 
 .main-text{
-    color: white;
+    color: #E9DEFF;
     font-size: 60px;
     font-weight: 500;
 }
 
 .header-vector{
+    top: 0;
     left: 250px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .main-card{
     backdrop-filter: blur(20px);
+    background-color: hsla(0, 0%, 0%, 0.837);
+    border-radius: 21px;
 }
 
 .left-card{
     background-image: url("../image/IndigoDrift.png");
+    background-color: #000000;
     background-size: cover;
     background-repeat: no-repeat; 
     color: #E9DEFF;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 10px;
     margin: 5px;
     width: 400px;
 }
 
 .left-card p{
-    width: 65%;
+    width: 70%;
     font-size: 14px;
 }
 
@@ -69,9 +100,16 @@ body {
 .middle-card{
     color: #E9DEFF;
     background-color: #423b3b41;
-    border-radius: 18px;
+    border-radius: 12.7px;
     height: 220px;
-    width: 330px;
+    width: 350px;
+    border-top: 1px solid #e2e2e2d6;
+    border-left: 1px solid #e2e2e29c;
+    border-right: 1px solid #e2e2e29c;
+}
+
+.right-card{
+    margin-left: -35px;
 }
 
 .upper-text p{
@@ -121,10 +159,10 @@ body {
     color: #E9DEFF;
 }
 
-.search-input i{
+.search-input img{
     position: absolute;
-    right: 30px;
-    top: 15px;
+    right: 25px;
+    top: 10px;
     color: #E9DEFF;
 }
 
@@ -139,18 +177,11 @@ body {
     align-items: start;
 }
 
-.recommended-card p{
+.main-info p{
     font-size: 12px;
-    color: #E9DEFF;
+    color: #ffff;
     margin-right: -10px;
     margin-left: 15px;
-}
-
-.recommended-card i{
-    color: #E9DEFF;
-    position: absolute;
-    right: 10px;
-    bottom: 5px;
 }
 
 /* === footer === */

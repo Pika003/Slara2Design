@@ -1,0 +1,47 @@
+@media screen and (max-width: 480px){
+    .logo img{
+        width: 80px;
+        margin-right: 20px;
+    }
+    .linear-btn {
+        font-size: 8px;
+        border-radius: 20px;
+    }
+    .linear-btn span {
+        padding: 5px 8px;
+        border-radius: 20px;
+    }
+    .header-vector{
+        top: 0;
+        left: -100px;
+        opacity: 0.4;
+    }
+    .header-vector img{
+        width: 500px;
+    }
+    .main-text{
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .left-card{
+        width: 400px;
+    }
+    .arrow-line{
+        margin-left: 0px;
+        margin-right: -10px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+    }
+    .middle-card{
+        height: 250px;
+    }
+
+    .right-card{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .direction-arrow img{
+        width: 100px;
+    }
+}
