@@ -1,0 +1,162 @@
+*{
+    font-family: "Arimo", serif;
+}
+
+body {
+    background-image: url("../image/background.png");
+    background-size: auto;
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 100vh;
+    background-color: #0E0026;
+}
+
+
+.header-btn button, .left-card button{
+    background: #0E0026;
+    border: 1px solid #9208F3;
+    border-radius: 20px;
+    color: #E9DEFF;
+    font-weight: 200;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.header-btn button i{
+    color: white;
+}
+
+.main-text{
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.header-vector{
+    left: 250px;
+    opacity: 0.3;
+}
+
+.main-card{
+    backdrop-filter: blur(20px);
+}
+
+.left-card{
+    background-image: url("../image/IndigoDrift.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: #E9DEFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 400px;
+}
+
+.left-card p{
+    width: 65%;
+    font-size: 14px;
+}
+
+.arrow-line{
+    margin-left: -70px;
+    margin-right: -45px;
+}
+
+.uparrow{
+    margin-bottom: -5px;
+}
+
+.middle-card{
+    color: #E9DEFF;
+    background-color: #423b3b41;
+    border-radius: 18px;
+    height: 220px;
+    width: 330px;
+}
+
+.upper-text p{
+    font-size: 12px;
+    width: 70%;
+    margin-bottom: -5px;
+}
+
+.upper-text h3{
+    font-size: 17px;
+    width: 70%;
+}
+
+.card-image{
+    margin-right: -11px;
+}
+
+.lower-text p:first-child{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.lower-text p{
+    font-size: 12px;
+}
+
+/* === input style === */
+.search-input{
+    position: relative;
+}
+
+.search-input input {
+    background: #2E2E2ECC;
+    height: 50px;
+    color: #E9DEFF;
+    outline: none;
+    
+}
+
+.search-input input:focus {
+    background: #2E2E2ECC;
+    color: #E9DEFF;
+    outline: none;
+}
+
+.search-input input::placeholder {
+    color: #E9DEFF;
+}
+
+.search-input i{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    color: #E9DEFF;
+}
+
+/* === Recommended Card === */
+.recommended-card{
+    background: #0000008A;
+    border-radius: 21px;
+    backdrop-filter: blur(20px);
+    border: 1px solid #9208F3;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+}
+
+.recommended-card p{
+    font-size: 12px;
+    color: #E9DEFF;
+    margin-right: -10px;
+    margin-left: 15px;
+}
+
+.recommended-card i{
+    color: #E9DEFF;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+/* === footer === */
+.footer{
+    background-color: #000000;
+}
+.footer p{
+    color: #E9DEFF;
+}
