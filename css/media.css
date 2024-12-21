@@ -1,4 +1,5 @@
 @media screen and (max-width: 480px){
+    /* Landing Page */
     .logo img{
         width: 80px;
         margin-right: 20px;
@@ -44,5 +45,26 @@
     }
     .direction-arrow img{
         width: 100px;
+    }
+
+    /* Meeting Page */
+    .meeting-card{
+        background: transparent;
+        border: none;
+    }
+
+    .transcript{
+        height: 70vh;
+    }
+
+    .chat-card, .meeting{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .chart-lead-card2, .line-arrow{
+        margin-left: 15px;
+    }
+    .mic{
+        margin-top: 15px;
     }
 }

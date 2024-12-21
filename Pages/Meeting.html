@@ -28,7 +28,7 @@
                 <img src="../image/header-vector.svg" alt="vector image">
             </div>
             <div class="d-flex header-btn">
-                <button class="me-3 linear-btn" >
+                <button class="me-3 linear-btn" type="button" data-bs-toggle="modal" data-bs-target="#addSIgnUpPopup">
                     <span>SIGN IN 
                         <img src="../image/Arrow.svg" alt="arrow">
                     </span>
@@ -40,7 +40,7 @@
     <!-- Main meeting Box -->
     <div class="container py-2 main-card meeting-card">
         <!-- meeting containt -->
-        <div class="d-flex align-items-start justify-content-between">
+        <div class="d-flex align-items-start justify-content-between meeting">
             <div class="pt-4">
                 <div class="recoding my-2">
                     <img src="../image/meeting/recordIcon.png" alt="recoding">
@@ -49,26 +49,38 @@
                 <div class="chat-card py-2 d-flex gap-3">
                     <div class="chart-lead-card">
                         <div class="edit-icons">
-                            <img src="../image/meeting/PencilSimpleLine.png" alt="">
-                            <img src="../image/meeting/Heart.png" alt="">
-                            <img src="../image/meeting/TrashSimple.png" alt="">
+                            <img type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Edit"
+                            src="../image/meeting/PencilSimpleLine.png" alt="">
+                            <img type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Like"
+                            src="../image/meeting/Heart.png" alt="">
+                            <img type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Delete"
+                            src="../image/meeting/TrashSimple.png" alt="">
                         </div>
                         <img class="chat-card-img" src="../image/businessman/businessman9.png" alt="">
                         <h6>Chat Lead</h6>
                         <p>35 years old Teacher, married with 2 kids, education: MBA, enjoys traveling and hiking...</p>
                     </div>
                     <div class="add-persona d-flex align-items-center justify-content-center flex-column">
-                        <img src="../image/meeting/PlusCircle.png" alt="PlusCircle" width="50">
+                        <img type="button" data-bs-toggle="modal" data-bs-target="#addPersonaPopup" src="../image/meeting/PlusCircle.png" alt="PlusCircle" width="50">
                         <h5>Add Persona</h5>
-                        <i class="fa-solid fa-circle-info"></i>
+                        <i type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Lorem ipsum dolor sit amet consectetur. Nulla quam fermentum sapien"
+                        class="fa-solid fa-circle-info"></i>
                     </div>
                 </div>
                 <div class="line-arrow">
                     <img src="../image/Line.svg" alt="line img">
                 </div>
                 <div class="chart-lead-card2">
-                    <div class="d-flex align-items-center gap-4">
-                        <img src="../image/meeting/animoji.png" alt="">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="../image/meeting/animoji.png" alt="" width="60">
                         <h5>You</h5>
                     </div>
                     <p class="mt-2 pt-2">Discussion Topic: 
@@ -113,13 +125,14 @@
 
             </div>
         </div>
-        <div class="d-flex align-items-center justify-content-center gap-3 mic">
-            <img src="../image/meeting/mute.png" alt="">
-            <img src="../image/meeting/mic.png" alt="">
-            <img src="../image/meeting/call.png" alt="">
-        </div>
         <!-- meeting Input -->
-        <div class="my-2 mt-4">
+        <div class="mb-1">
+            <div class="d-flex align-items-center justify-content-center gap-3 mic">
+                <img src="../image/meeting/mute.png" alt="">
+                <img src="../image/meeting/mic.png" alt="">
+                <img src="../image/meeting/call.png" alt="">
+            </div>
+
             <div class="meeting-input">
                 <input type="text" placeholder="Message Slara" class="form-control rounded-2 ps-3">
                 <div class="input-icons">
@@ -130,7 +143,102 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="addPersonaPopup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content custom-modal">
+                <i class="fa-sharp fa-solid fa-circle-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
+                <h4>How Many Persona’s You Want to Add for Discussion?</h4>
+                <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                    <button>Custom</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>4</button>
+                    <button>6</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="addSIgnUpPopup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content custom-modal signUp-model">
+                <i class="fa-sharp fa-solid fa-circle-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
+                <h3>Sign In</h3>
+                <p>To continue meeting first</p>
+                <div class="sign-in-btn my-2">
+                    <button class="first-button">Sign In</button>
+                    <p class="mt-3">Or</p>
+                    <button class="second-button">Create Account</button>
+                </div>
+                <div class="terms">
+                    <p>By continuing, you agree to our <u >Terms</u></p>
+                    <p> and acknowledge our <u > Privacy Policy</u></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- termsPopUp Modal -->
+    <div class="modal fade" id="termsPopUp" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content custom-modal privacy-model">
+                <i class="fa-sharp fa-solid fa-circle-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
+                <h3>termsPopUp</h3>
+                <p id="backToFirstModal">back</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- privacyPopUp Modal -->
+    <div class="modal fade" id="privacyPopUp" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content custom-modal privacy-model">
+                <i class="fa-sharp fa-solid fa-circle-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
+                <h3>privacyPopUp</h3>
+                <p id="backToFirstModal2">back</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var mainModal = new bootstrap.Modal(document.getElementById('addSIgnUpPopup'));
+            var firstModal = new bootstrap.Modal(document.getElementById('termsPopUp'));
+            var secondModal = new bootstrap.Modal(document.getElementById('privacyPopUp'));
+
+            document.getElementById('terms').addEventListener('click', function () {
+                mainModal.hide();
+                firstModal.show();
+                secondModal.hide();
+            });
+
+            document.getElementById('privacy').addEventListener('click', function () {
+                mainModal.hide();
+                firstModal.hide();
+                secondModal.show();
+            });
+
+            document.querySelector('#backToFirstModal').addEventListener('click', function () {
+                mainModal.show();
+                firstModal.hide();
+                secondModal.hide();
+            });
+
+            document.querySelector('#backToFirstModal2').addEventListener('click', function () {
+                mainModal.show();
+                firstModal.hide();
+                secondModal.hide();
+            });
+        });
+    </script>
+    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script> document.addEventListener('DOMContentLoaded', function() { var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')); var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) { return new bootstrap.Tooltip(tooltipTriggerEl); }); }); </script>
 </body>
 </html>

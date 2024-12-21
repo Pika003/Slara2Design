@@ -4,12 +4,14 @@
 
 body {
     background-image: url("../image/background.png");
-    background-size: auto;
-    background-repeat: no-repeat; 
-    background-position: center;
-    height: 100vh;
-    background-color: #0E0026;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    height: 100%;
+    background-color: #000000;
 }
+
 
 .header-btn{
     display: block;
@@ -33,6 +35,7 @@ body {
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
+    z-index: 999;
 }
 
 .linear-btn span {
@@ -67,14 +70,15 @@ body {
 
 .main-card{
     backdrop-filter: blur(20px);
-    background-color: hsla(0, 0%, 0%, 0.837);
+    background-color: #0000006a;
     border-radius: 21px;
+    border: 1px solid #9b28a850;
 }
 
 .left-card{
     background-image: url("../image/IndigoDrift.png");
     background-color: #000000;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat; 
     color: #E9DEFF;
     padding: 10px 15px;
@@ -99,7 +103,7 @@ body {
 
 .middle-card{
     color: #E9DEFF;
-    background-color: #423b3b41;
+    background-color: #fefefe20;
     border-radius: 12.7px;
     height: 220px;
     width: 350px;
@@ -172,17 +176,44 @@ body {
     border-radius: 21px;
     backdrop-filter: blur(20px);
     border: 1px solid #9208F3;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     align-items: start;
+    z-index: -1;
+    position: relative;
 }
 
 .main-info p{
-    font-size: 12px;
+    font-size: 10px;
     color: #ffff;
     margin-right: -10px;
     margin-left: 15px;
 }
+
+.main-info p:first-child{
+    font-size: 12px;
+}
+
+.main-info img{
+    position: absolute;
+}
+
+.marginNegative{
+    padding-bottom: 0;
+}
+
+.zIndex999 {
+    z-index: 999;
+}
+.dropdown-menu{
+    /* border-radius: 1px; */
+    background-color: #1E1E1E;
+    z-index: 1000 !important;
+}
+
+.dropdown-menu button{
+    color: #fff;
+} 
 
 /* === footer === */
 .footer{
@@ -199,6 +230,11 @@ body {
     border-radius: 17px;
     padding: 30px;
     color:#ffff;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .recoding span{
@@ -247,6 +283,10 @@ body {
     padding: 15px;
 }
 
+.chat-card, .meeting{
+    flex-direction: row;
+}
+
 .chat-card-img{
     box-shadow: 0 4px 8px #9208F3;
     border-radius: 10px;
@@ -285,7 +325,7 @@ body {
 
 /* transcript */
 .transcript{
-    height: 480px;
+    height: 67vh;
     width: 280px;
     background-color: #3b143f1f;
     border-radius: 10px;
@@ -301,6 +341,7 @@ body {
 
 .mic{
     margin-top: -50px;
+    padding-bottom: 15px;
 }
 
 .mic img{
@@ -317,7 +358,8 @@ body {
     height: 45px;
     color: #E9DEFF;
     outline: none;
-    border: 0.5px solid;
+    border: 0.1px solid #595858cc;
+    margin-bottom: 15px;
 }
 
 .meeting-input input:focus {
@@ -372,4 +414,115 @@ body {
 
 .trans-body{
     height: 400px;
+}
+
+/* === Modal Dialog === */
+.custom-modal{
+    width: 430px ;
+    height: 420px ;
+    border-radius: 10px;
+    border: 1px solid rgba(211, 211, 211, 0.307);
+    padding: 15px;
+    background: #05000DCC;
+}
+
+.custom-modal h4{
+    color: #E9DEFF;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.custom-modal i{
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+.custom-modal button{
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    color: #959595;
+    height: 40px;
+    width: 250px;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 11px;
+}
+
+/* -------- */
+.custom-tooltip .tooltip-inner {
+    background-color: #9208F3;
+    color: #E9DEFF; 
+}
+
+.custom-tooltip .tooltip-arrow::before {
+    border-top-color: #9208F3 !important;
+}
+
+/* --- signUp Model --- */
+.signUp-model{
+    height: 400px ;
+    color: #fff;
+    text-align: center;
+    border: 1px solid linear-gradient(200.58deg, #9208F3 13.18%, rgba(155, 40, 168, 0) 85.88%); 
+}
+.signUp-model p{
+    color: #e9deff84;
+    font-size: 16px;
+}
+.signUp-model h3{
+    font-size: 26px;
+    margin-top: 2rem;
+}
+
+
+.sign-in-btn .first-button{
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background: linear-gradient(105.93deg, #9B28A8 10.92%, #9208F3 88.71%);
+}
+
+.sign-in-btn .second-button {
+    border-radius: 5px;
+    text-align: center;
+    color: #ffff;
+    font-size: 14px;
+    border: 1px solid #9B28A8;
+    background: linear-gradient(105.93deg, #9B28A8 10.92%, #9208F3 88.71%);
+
+    background: transparent;
+    border-image-slice: 1;
+}
+
+
+.sign-in-btn p{
+    color: #9208F3;
+    font-size: 12px;
+}
+
+.terms{
+    margin-top: 30px;
+}
+.terms u{
+    color: #ffff;
+    margin-left: 5px;
+}
+
+.terms u, .terms p{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.privacy-model{
+    border-radius: 20px;
+
+    color: #fff;
+    text-align: center;
+    border: 1px solid linear-gradient(200.58deg, #9208F3 13.18%, rgba(155, 40, 168, 0) 85.88%); 
 }
